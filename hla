@@ -1,0 +1,23 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main()
+{
+  ofstream output;
+
+  // Create a file
+  output.open("scores.txt");
+
+  // Write two lines
+  output << "fha" << "pla " << "lot" << "fop " << "hkp" 
+    << " jlo" << 90 << endl;
+  output << "jui" << "jya " << "K" << "mlp " << "nop" 
+    << " " << 85 << endl;
+
+  output.close();
+
+  cout << "Done" << endl;
+
+  return 0;
+}
